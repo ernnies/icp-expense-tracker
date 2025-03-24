@@ -16,15 +16,7 @@ module.exports = {
         },
       },
     ],
-  },
-  networks: {
-    sepolia: {
-      url: secrets.url,
-      accounts: [secrets.key],
-    },
-    bsc: {
-      url: secrets.bscUrl,
-      accounts: [secrets.key],
+  },ey],
     },
   },
   etherscan: {

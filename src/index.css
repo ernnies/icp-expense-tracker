@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  /* Global variables to be defined here */
+  /*
+  :root it is a pseudo-class represents the highest level of the document
+  :root is specifically used to declare global css variables because the variables defined
+  here will be accessible throughout the entire document
+  css variables are declared using -- and can be used by var keyword
+  */
+  --primary-bg-color: #3b3b3b;
+  --secondary-bg-color: #9b9b9b;
+  --font-heading: "Ubuntu";
+  --font-body: "Ubuntu";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+"*" selector target all elements
+"*::before" target the pseudo-element
+"*::after" target the pseudo -element
+we are apply box-sizing : border-box so that
+the provided width and height does not change if we add border
+and padding
+*/
+
+* {
+  margin: 0;
+}
+
+/*
+This rule removes all default margins from every element
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+This ensure that the html and body elements fill the entire height of the browser 
+window
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+line-height sets the default line height for text in the body to improve readibility
+-webkit-font-smoothing:antialiased; 
+This property improves the appearance of text on macOS and iOS devices by reducing the
+"jaggedness" of fonts.
+It provides better text rendering for a cleaner look and more readable text across browsers.
+
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+-Media elements like images,videos and canvases are typically inline elements
+-it is displayed to block it ensure that they behave more predictably in layouts.
+max-width:100%;This ensures that media elements are responsive and don't overflow containers
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* font:inherit it forces input elements to inherit the font family ,size and style ffrom their parent
+.it helps maintain consistent typography across form elements and the rest of the page
+--By defaults form elements may use different fonts across browsers so to avoid this 
+it is used */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+overflow-wrap:break-word: This allows long words to break and wrap onto next line instead of overflowing their 
+container
+
+--It ensure that large blocks of text don't break the layout by overflowing out of their containers
+
+*/
+
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
+#root and #__next (often used in framework like React and Next.js)
+--To create a new stacking context,preventing issues like z-index conflicts from affecting
+other parts of the page.
+
+--It is used to avoids layout problems when layers overlap,especially in complex layouts with modals 
+or dropdowns.
+*/
+h1,h2,h3,h4,h5,h6,button{
+  font-family:var(--font-heading);
+}
+p,a{
+  font-family:var(--font-body);
+}
+/*
+font-family:var(--font-heading): applies the custom heading font to all heading h1 to h6 and 
+buttons(it should be defined in root)
+--font-family:var(--font-body):it applies the custom body font to paragraph p and links
+
+--I keeps the typography consisitent by defininjg specific fonts for heading
+body text and interactive elements like buttons. The use of css variables make it 
+easy to change fonts globally.
+*/

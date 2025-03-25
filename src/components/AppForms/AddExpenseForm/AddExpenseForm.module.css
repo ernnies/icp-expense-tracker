@@ -1,0 +1,21 @@
+.expenseFormWrapper h3{
+    font-size: 30px;
+    margin-bottom:10px;
+}
+.expenseFormWrapper form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:18px;
+}
+.expenseFormWrapper input,.expenseFormWrapper select{
+    background:#FBFBFB;
+    border:0;
+    outline:0;
+    color:#333;
+    font-size:1rem;
+    box-shadow:0 4px 4px rgba(0,0,0,0.25);
+    padding:12px;
+    font-family: var(--font-body);
+    border-radius: 15px;
+    box-sizing: border-box;
+}

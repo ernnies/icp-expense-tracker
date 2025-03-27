@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# 🏦 経費トラッカー dApp - ICP Hackathon 2025 (Wave 4)  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 概要  
+**Expense Tracker dApp** は、**Internet Computer Protocol (ICP)** 上に構築された分散型アプリケーションで、ユーザーが安全に**取引を記録、分類、可視化** できるようにします。従来の経費管理アプリとは異なり、本dAppは**ICP Canister** を活用した**分散型ストレージ** と **Internet Identity** による**安全な認証** を導入し、**データのプライバシー、セキュリティ、完全なユーザー管理** を保証します。  
 
-## Available Scripts
+---  
 
-In the project directory, you can run:
+## 🎯 機能概要  
+✅ **安全な経費記録**：サードパーティの制約なしに経費を記録・分類可能。  
+✅ **リアルタイム財務インサイト**：**インタラクティブなチャート** を使って支出パターンを可視化。  
+✅ **分散型＆プライベート**：データは**ICP Canister** に安全に保存され、**改ざん不可** かつ**耐検閲**。  
+✅ **シームレスな認証**：**Internet Identity (II)** による**パスワードレスかつ分散型のログイン**。  
+✅ **マルチデバイス対応**：デバイス間のデータ同期を気にせず、どこからでも経費を管理可能。  
 
-### `npm start`
+---  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ❌ 解決する課題  
+💡 **従来の経費管理アプリ** は、**中央集権型サーバー** にデータを保存するため、以下の問題が発生します。  
+- **プライバシーリスク**：サードパーティによるデータアクセスの可能性。  
+- **検閲やデータ喪失のリスク**：サービス終了や停止による影響を受ける。  
+- **セキュリティの脆弱性**：ハッキングやデータ漏洩のリスク。  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔥 **解決策**：本dAppは **ICPの分散型スマートコントラクト** を活用し、**サードパーティの制御を排除** することで、ユーザーが財務データの**完全な所有権とセキュリティ** を確保できるようにします。  
 
-### `npm test`
+---  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚧 直面した課題  
+🔐 **認証の最適化**：**Internet Identity** を統合しながら、スムーズなユーザー体験を実現する最適化が必要だった。  
+⚡ **スケーラビリティとパフォーマンス**：**Canisterベースのデータ管理** を効率化し、迅速な経費データ取得を可能にする必要があった。  
+🌉 **Web2からWeb3への移行**：ブロックチェーン技術に不慣れなユーザーでも簡単に利用できるよう、**スムーズなオンボーディング** を設計。  
 
-### `npm run build`
+---  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ 使用技術  
+- **🖥️ Internet Computer Protocol (ICP)**：分散型ホスティングとスマートコントラクトの実行。  
+- **🔑 Internet Identity (II)**：パスワードレスで安全な認証を提供。  
+- **⚛️ React.js**：直感的でインタラクティブなフロントエンドを構築。  
+- **📊 Recharts**：データの視覚化により、財務状況を明確に表示。  
+- **🔔 Notistack**：リアルタイム通知でユーザー体験を向上。  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗️ 開発プロセス  
+1️⃣ **React.jsを活用した直感的なUIの設計**。  
+2️⃣ **Internet Identityの統合** により、安全で分散型の認証を実装。  
+3️⃣ **ICP Canisterを活用** し、分散型かつ効率的な財務データの保存を実現。  
+4️⃣ **Rechartsを実装** し、支出の傾向分析と明確な可視化を提供。  
+5️⃣ **dAppをICPの本番環境にデプロイ** し、公開アクセスを可能に。  
 
-### `npm run eject`
+---  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📚 学んだこと  
+✅ **ICPアーキテクチャの理解を深める** とともに、特に**Canisterスマートコントラクトの活用方法** を学んだ。  
+✅ **Internet Identityを使ったWeb3認証のベストプラクティス** を習得。  
+✅ **分散型技術とユーザビリティのバランス** をとることの重要性を実感。  
+✅ **非技術者でも使いやすいUI設計の重要性** を再認識。  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔮 今後の展望  
+🚀 **マルチチェーンサポート**：**暗号資産＆法定通貨** の両方を管理できる機能を追加。  
+🤖 **AI駆動のインサイト**：**自動財務分析＆予算管理** を提供。  
+💳 **分散型決済機能**：**ピアツーピア決済** や**スマートコントラクトを活用した自動取引** を実装。  
+👨‍👩‍👧‍👦 **共同財務管理**：家族、企業、DAO向けの**共有経費管理** 機能を導入。  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---  
 
-## Learn More
+## 📡 本番デプロイ  
+🔗 [デプロイ済みURL](https://expense-tracker-by-icp.netlify.app/)  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📂 リポジトリ  
+📌 [GitHubリポジトリ](https://github.com/ernnies/icp-expense-tracker.git)  
 
-### Code Splitting
+---  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🏆 ICP Hackathon 2025 (Wave 4) 参加プロジェクト  
+本プロジェクトは、**ICP Hackathon 2025 Wave 4** の**分散型ID、スマートコントラクト、Web3技術を活用したdApp開発** にフォーカスしたハッカソンの一環として開発されました。  
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+💡 **分散型とセキュリティを備えた新しい経費管理の形を共に創りましょう！🚀🔥**

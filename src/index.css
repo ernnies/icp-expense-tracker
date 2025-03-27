@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 :root {
-  /* Global variables to be defined here */
-  /*
-  :root it is a pseudo-class represents the highest level of the document
-  :root is specifically used to declare global css variables because the variables defined
-  here will be accessible throughout the entire document
-  css variables are declared using -- and can be used by var keyword
-  */
+
   --primary-bg-color: #3b3b3b;
   --secondary-bg-color: #9b9b9b;
   --font-heading: "Ubuntu";
@@ -114,12 +108,3 @@ h1,h2,h3,h4,h5,h6,button{
 p,a{
   font-family:var(--font-body);
 }
-/*
-font-family:var(--font-heading): applies the custom heading font to all heading h1 to h6 and 
-buttons(it should be defined in root)
---font-family:var(--font-body):it applies the custom body font to paragraph p and links
-
---I keeps the typography consisitent by defininjg specific fonts for heading
-body text and interactive elements like buttons. The use of css variables make it 
-easy to change fonts globally.
-*/
